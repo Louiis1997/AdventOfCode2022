@@ -1,6 +1,6 @@
 def move(nb_time, from_stack, to_stack):
-    for _ in range(nb_time):
-        to_stack.append(from_stack.pop())
+    for i in range(nb_time):
+        to_stack.insert(len(to_stack)-i, from_stack.pop())
 
 
 with open('input.txt', 'r') as file:
